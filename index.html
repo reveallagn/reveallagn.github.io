@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReveaLLAGN</title>
+  <style>
+    :root {
+      --header-bg: #ffffff;
+      --header-text: #000000;
+      --page-bg: #f5f5f5;
+      --content-bg: #ffffff;
+      --accent: #4b8bbe;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: var(--page-bg);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--header-bg);
+      color: var(--header-text);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img.logo {
+      height: 50px;
+      margin-right: 1rem;
+    }
+    nav a {
+      color: var(--header-text);
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      background: var(--content-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .galaxy-img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    details {
+      margin-bottom: 0.8rem;
+    }
+    
+    /* Indent nested details */
+    details details {
+      margin-left: 1.5rem;
+    }
+
+    details details details {
+      margin-left: 1.5rem;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    details summary::marker {
+      font-size: 1.2em; /* optional, makes the disclosure arrow bigger */
+    }
+  </style>
+</head>
+<body>
+  <header style="display:flex; align-items:center; justify-content:center; padding:1rem 2rem; background:var(--header-bg); color:var(--header-text); border-bottom:1px solid #ddd; position:relative;">
+    <img src="images/reveallagn_logo.png" class="logo" alt="ReveaLLAGN Logo" style="height:60px; position:absolute; left:2rem;"/>
+    <div style="text-align:center;">
+      <h1 style="margin:0; color:var(--header-text);">ReveaLLAGN</h1>
+      <h3 style="margin:0; font-weight:400; color:#555;">Revealing Low-Luminosity AGN</h3>
+      <nav style="margin-top:0.6rem;">
+        <a href="#general">General</a>
+        <a href="#people">People</a>
+        <a href="#data">Data</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="general">
+      <h2>General</h2>
+      <img src="images/galaxies_overview.jpg" class="galaxy-img" alt="Galaxies Overview" />
+      <p>Brief project description goes here.</p>
+    </section>
+
+    <section id="people">
+      <h2>People</h2>
+      <p>List of collaborators, institutions, roles.</p>
+    </section>
+
+    <section id="data">
+      <h2>Data</h2>
+      <p>
+        ReveaLLAGN processed data cubes and 1D extracted spectra: 
+        <a href="https://example.com/data_download_link" target="_blank">download here</a>.
+      </p>
+    </section>
+
+    <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        Goold et al., 2024, ReveaLLAGN 0: 
+        [<a href="https://ui.adsabs.harvard.edu/link_to_paper1" target="_blank">ADS</a>]
+      </li>
+      <li>
+        Goold et al., 2025, ReveaLLAGN 1: 
+        [<a href="https://ui.adsabs.harvard.edu/link_to_paper2" target="_blank">ADS</a>]
+      </li>
+      <li>
+        Ohlson et al., 2026, ReveaLLAGN 2: [in prep]
+        [<a href="https://ui.adsabs.harvard.edu/link_to_paper3" target="_blank">ADS</a>]
+      </li>
+    </ul>
+  </section>
+  </main>
+</body>
+</html>
